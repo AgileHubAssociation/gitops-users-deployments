@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-users-nginx
+spec:
+  destination:
+    namespace: users
+    name: dev-cluster
+  project: default
+  source:
+    path: nginx
+    repoURL: https://github.com/lcostea/gitops-users-deployments.git
+    targetRevision: dev
+  syncPolicy:
+    automated:
+      prune: false

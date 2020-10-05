@@ -1,0 +1,12 @@
+nginx:
+  image:
+    registry: docker.io
+    repository: bitnami/nginx
+    tag: 1.19.1-debian-10-r22
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi

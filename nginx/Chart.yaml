@@ -1,0 +1,8 @@
+apiVersion: v1
+description: NGinx Umbrella chart
+name: nginx-umbrella
+version: 0.1.0
+appVersion: "1.0"
+maintainers:
+  - name: liviu.costea
+home: https://gitlab.com/liviu-costea/kubecon_eu_2020_gitops
